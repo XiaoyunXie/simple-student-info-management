@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="636.0" prefWidth="736.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextArea fx:id="viewContext" editable="false" layoutX="27.0" layoutY="390.0" prefHeight="222.0" prefWidth="682.0" />
+            <TextArea fx:id="id_input" layoutX="80.0" layoutY="21.0" prefHeight="32.0" prefWidth="165.0" />
+            <TextArea fx:id="name_input" layoutX="80.0" layoutY="83.0" prefHeight="32.0" prefWidth="165.0" />
+            <TextArea fx:id="age_input" layoutX="80.0" layoutY="140.0" prefHeight="32.0" prefWidth="165.0" />
+            <TextArea fx:id="score1_input" layoutX="80.0" layoutY="200.0" prefHeight="32.0" prefWidth="165.0" />
+            <TextArea fx:id="score2_input" layoutX="80.0" layoutY="263.0" prefHeight="32.0" prefWidth="165.0" />
+            <TextArea fx:id="score3_input" layoutX="80.0" layoutY="322.0" prefHeight="32.0" prefWidth="165.0" />
+            <Button fx:id="add" layoutX="529.0" layoutY="24.0" mnemonicParsing="false" onAction="#add" prefHeight="38.0" prefWidth="150.0" text="增加" />
+            <Button fx:id="delete" layoutX="529.0" layoutY="105.0" mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="150.0" text="删除" />
+            <Button fx:id="search" layoutX="529.0" layoutY="186.0" mnemonicParsing="false" onAction="#search" prefHeight="38.0" prefWidth="150.0" text="查找" />
+            <Button fx:id="modify" layoutX="529.0" layoutY="260.0" mnemonicParsing="false" onAction="#modify" prefHeight="38.0" prefWidth="150.0" text="修改" />
+            <Label layoutX="34.0" layoutY="27.0" text="学号" />
+            <Label layoutX="34.0" layoutY="89.0" text="姓名" />
+            <Label layoutX="34.0" layoutY="146.0" text="年龄" />
+            <Label layoutX="30.0" layoutY="206.0" text="成绩1" />
+            <Label layoutX="30.0" layoutY="269.0" text="成绩2" />
+            <Label layoutX="30.0" layoutY="328.0" text="成绩3" />
+            <Label layoutX="355.0" layoutY="12.0" prefHeight="51.0" prefWidth="30.0" text="简">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="355.0" layoutY="58.0" prefHeight="51.0" prefWidth="30.0" text="单">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="109.0" text="学">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="353.0" layoutY="153.0" text="生">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="353.0" layoutY="197.0" text="信">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="241.0" text="息">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="289.0" text="管">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="335.0" text="理">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="allInfo" layoutX="529.0" layoutY="325.0" mnemonicParsing="false" onAction="#getAllInfo" prefHeight="38.0" prefWidth="150.0" text="所有学生信息" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
